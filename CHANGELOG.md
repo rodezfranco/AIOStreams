@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.1](https://github.com/rodezfranco/AIOStreams/compare/v2.13.0...v2.13.1) (2025-09-09)
+
+
+### Bug Fixes
+
+* **compose:** update aiostreams image reference to correct repository ([9bd52a4](https://github.com/rodezfranco/AIOStreams/commit/9bd52a4b54012cf71795b826746f5cfe733cc31a))
+
 ## [2.13.0](https://github.com/rodezfranco/AIOStreams/compare/v2.12.2...v2.13.0) (2025-09-09)
 
 
