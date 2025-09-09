@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.13.0](https://github.com/rodezfranco/AIOStreams/compare/v2.12.2...v2.13.0) (2025-09-09)
+
+
+### Features
+
+* **core/formatters:** improve and refactor base formatter ([224810d](https://github.com/rodezfranco/AIOStreams/commit/224810dcc3854363d053eee1b712e7c0ee5b4e4c))
+* **frontend:** persist user data to local storage ([#353](https://github.com/rodezfranco/AIOStreams/issues/353)) ([213d3cf](https://github.com/rodezfranco/AIOStreams/commit/213d3cf700c8a201caeca624b6679bfb28da5290))
+
+
+### Bug Fixes
+
+* **core/formatters:** ensure null values trigger the false check case in conditional modifiers ([#348](https://github.com/rodezfranco/AIOStreams/issues/348)) ([dae054f](https://github.com/rodezfranco/AIOStreams/commit/dae054fd6b58e673b7814271acc01ceced983cac))
+* **core/formatters:** update Conditional check to properly typecheck ([#361](https://github.com/rodezfranco/AIOStreams/issues/361)) ([9a305ea](https://github.com/rodezfranco/AIOStreams/commit/9a305ea6ee9486949e1ac594c39db4efc685e831))
+* **workflows:** update Docker image tags and remove Discord notification step ([5ee0341](https://github.com/rodezfranco/AIOStreams/commit/5ee034147bbe6b57e77dce8b037c32ed9948f136))
+* **workflows:** update release action to use correct token and action reference ([e82031a](https://github.com/rodezfranco/AIOStreams/commit/e82031a3db697b5a45cea5fa558cf37cfa14ed87))
+
 ## [2.12.2](https://github.com/Viren070/AIOStreams/compare/v2.12.1...v2.12.2) (2025-09-02)
 
 
