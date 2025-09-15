@@ -1,6 +1,6 @@
 services:
   aiostreams:
-    image: ghcr.io/erodez/aiostreams:latest
+    image: ghcr.io/erodez/aios:latest
     container_name: aiostreams
     restart: unless-stopped
     ports:
