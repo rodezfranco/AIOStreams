@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.4](https://github.com/rodezfranco/AIOStreams/compare/v2.12.3...v2.12.4) (2025-09-15)
+
+
+### Bug Fixes
+
+* update permissions in deploy workflow to read contents and modify image references ([b97a2d8](https://github.com/rodezfranco/AIOStreams/commit/b97a2d89692919808c78abe587faf3426643fc73))
+
 ## [2.12.3](https://github.com/rodezfranco/AIOStreams/compare/v2.12.2...v2.12.3) (2025-09-15)
 
 
