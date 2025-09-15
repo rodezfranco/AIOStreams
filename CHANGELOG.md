@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.12.3](https://github.com/rodezfranco/AIOStreams/compare/v2.12.2...v2.12.3) (2025-09-15)
+
+
+### Bug Fixes
+
+* update action reference to googleapis in release workflow ([e96ee78](https://github.com/rodezfranco/AIOStreams/commit/e96ee78d393a0632a1306030f4990b83cba92868))
+* update permissions in deploy workflow to allow write access to contents ([a47e3e0](https://github.com/rodezfranco/AIOStreams/commit/a47e3e0812f2808e498f9040fbc3b0265febfda8))
+* update token reference in release workflow to use github.token ([66e9214](https://github.com/rodezfranco/AIOStreams/commit/66e9214cc821bb5af296419864b4f87a1d678d7f))
+* update token reference in release workflow to use secrets.RELEASE_PLEASE_TOKEN ([7c7b621](https://github.com/rodezfranco/AIOStreams/commit/7c7b621a8bae1af5889f6aeb564310b76b4b31a2))
+
 ## [2.12.2](https://github.com/Viren070/AIOStreams/compare/v2.12.1...v2.12.2) (2025-09-02)
 
 
