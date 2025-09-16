@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.5](https://github.com/rodezfranco/AIOStreams/compare/v2.12.4...v2.12.5) (2025-09-15)
+
+
+### Bug Fixes
+
+* update image reference in deploy workflow to match repository naming convention ([493f0c7](https://github.com/rodezfranco/AIOStreams/commit/493f0c73c3ca3f0e90027b9aefbfb58bbb3cf2d4))
+
 ## [2.12.4](https://github.com/rodezfranco/AIOStreams/compare/v2.12.3...v2.12.4) (2025-09-15)
 
 
