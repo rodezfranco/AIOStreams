@@ -8,7 +8,7 @@
     "release": "commit-and-tag-version",
     "format": "prettier --write .",
     "metadata": "node scripts/generateMetadata.js",
-    "build": "pnpm -F core run build && pnpm -F server run build && pnpm -F frontend run build",
+    "build": "node --max-old-space-size=4096 ./node_modules/.bin/pnpm -F core run build && node --max-old-space-size=4096 ./node_modules/.bin/pnpm -F server run build && node --max-old-space-size=4096 ./node_modules/.bin/pnpm -F frontend run build",
     "build:watch": "tsc --build --watch",
     "start": "node packages/server/dist/server",
     "start:addon": "pnpm run start",
