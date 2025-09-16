@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.12.6](https://github.com/rodezfranco/AIOStreams/compare/v2.12.5...v2.12.6) (2025-09-16)
+
+
+### Bug Fixes
+
+* update GitHub Container Registry login to use fallback token ([d36be09](https://github.com/rodezfranco/AIOStreams/commit/d36be09f35bd250456a495245ade2b9c6992379f))
+
 ## [2.12.5](https://github.com/rodezfranco/AIOStreams/compare/v2.12.4...v2.12.5) (2025-09-15)
 
 
