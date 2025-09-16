@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.12.7](https://github.com/rodezfranco/AIOStreams/compare/v2.12.6...v2.12.7) (2025-09-16)
+
+
+### Bug Fixes
+
+* simplify build script to use cross-env for memory limit ([cc667a9](https://github.com/rodezfranco/AIOStreams/commit/cc667a9569a3f755b5aee8e43e672caeaaa2f293))
+* update build script to include memory limit for node process ([c2ab7ff](https://github.com/rodezfranco/AIOStreams/commit/c2ab7ffb3650c82268d6d82b3aab611fccc40b27))
+
 ## [2.12.6](https://github.com/rodezfranco/AIOStreams/compare/v2.12.5...v2.12.6) (2025-09-16)
 
 
