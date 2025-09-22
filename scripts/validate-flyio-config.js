@@ -73,6 +73,34 @@ try {
                 return portMatch && parseInt(portMatch[1]) > 0;
             },
             error: 'Puerto interno no es válido'
+        },
+        {
+            name: 'Sintaxis TOML - Booleanos sin comillas',
+            test: () => {
+                const booleanErrors = [
+                    /DISABLE_RATE_LIMITS = ['"]\w+['"]/,
+                    /ENABLE_SEARCH_API = ['"]\w+['"]/,
+                    /EXPOSE_USER_COUNT = ['"]\w+['"]/
+                ];
+                return !booleanErrors.some(regex => regex.test(content));
+            },
+            error: 'Los valores booleanos no deben tener comillas (true/false)'
+        },
+        {
+            name: 'Sintaxis TOML - Números sin comillas',
+            test: () => {
+                const numberErrors = [
+                    /DEFAULT_MAX_CACHE_SIZE = ['"]\d+['"]/,
+                    /STREAM_CACHE_TTL = ['"]\d+['"]/,
+                    /CATALOG_CACHE_TTL = ['"]\d+['"]/,
+                    /META_CACHE_TTL = ['"]\d+['"]/,
+                    /DEFAULT_TIMEOUT = ['"]\d+['"]/,
+                    /CATALOG_TIMEOUT = ['"]\d+['"]/,
+                    /META_TIMEOUT = ['"]\d+['"]/
+                ];
+                return !numberErrors.some(regex => regex.test(content));
+            },
+            error: 'Los valores numéricos no deben tener comillas'
         }
     ];
 

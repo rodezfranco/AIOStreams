@@ -157,16 +157,33 @@ Este error ocurre cuando hay problemas de sintaxis TOML. Soluciones:
    node scripts/validate-flyio-config.js
    ```
 
-2. **Corregir comillas**: Asegúrate de usar comillas dobles para cadenas:
+2. **Corregir automáticamente** (¡nuevo!):
+   ```bash
+   node scripts/fix-flyio-toml.js
+   ```
+
+3. **Corregir comillas**: Asegúrate de usar comillas dobles para cadenas:
    ```toml
    cpu_kind = "shared"  # ✅ Correcto
    cpu_kind = 'shared'  # ❌ Incorrecto
    ```
 
-3. **Verificar valores booleanos**: No usar comillas para `true`/`false`:
+4. **Verificar valores booleanos**: No usar comillas para `true`/`false`:
    ```toml
    force_https = true   # ✅ Correcto
    force_https = "true" # ❌ Incorrecto
+   ```
+
+5. **Verificar valores numéricos**: No usar comillas para números:
+   ```toml
+   DEFAULT_MAX_CACHE_SIZE = 100000  # ✅ Correcto
+   DEFAULT_MAX_CACHE_SIZE = '100000'  # ❌ Incorrecto
+   ```
+
+6. **Verificar puertos**: Los puertos deben ser números sin comillas:
+   ```toml
+   PORT = 8080  # ✅ Correcto
+   PORT = '8080'  # ❌ Incorrecto
    ```
 
 ### Error de Puerto
