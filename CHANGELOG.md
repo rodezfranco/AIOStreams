@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.15.0](https://github.com/rodezfranco/AIOStreams/compare/v2.14.0...v2.15.0) (2025-09-22)
+
+
+### Features
+
+* add Fly.io configuration validation script and enhance README instructions ([b4fdd1c](https://github.com/rodezfranco/AIOStreams/commit/b4fdd1c845711eb12bf062e978400eab9e9f31a7))
+
 ## [2.14.0](https://github.com/rodezfranco/AIOStreams/compare/v2.13.0...v2.14.0) (2025-09-22)
 
 
