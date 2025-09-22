@@ -66,7 +66,7 @@ primary_region = 'iad'
   min_machines_running = 0
   processes = ["app"]
 
-[[checks]]
+[checks]
   grace_period = "10s"
   interval = "30s"
   method = "GET"
@@ -85,7 +85,7 @@ primary_region = 'iad'
   destination = "/app/data"
 
 # Static file serving
-[[statics]]
+[statics]
   guest_path = "/app/packages/server/dist/static"
   url_prefix = "/static/"
 
