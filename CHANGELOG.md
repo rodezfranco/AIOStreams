@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.0](https://github.com/rodezfranco/AIOStreams/compare/v2.13.0...v2.14.0) (2025-09-22)
+
+
+### Features
+
+* add Fly.io deployment configuration and scripts, including environment variables and deployment automation ([ea82ef5](https://github.com/rodezfranco/AIOStreams/commit/ea82ef54937015e8f0bc84b253b1bd6e52064edb))
+
 ## [2.13.0](https://github.com/rodezfranco/AIOStreams/compare/v2.12.7...v2.13.0) (2025-09-16)
 
 
