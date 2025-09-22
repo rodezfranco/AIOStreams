@@ -16,7 +16,15 @@ curl -L https://fly.io/install.sh | sh
 fly auth login
 ```
 
-### 3. Configurar Secrets
+### 3. Validar Configuración
+
+Antes de desplegar, valida que la configuración sea correcta:
+
+```bash
+node scripts/validate-flyio-config.js
+```
+
+### 4. Configurar Secrets
 
 ```bash
 # Clave secreta para encriptación (64 caracteres hexadecimales)
@@ -30,7 +38,7 @@ fly secrets set DEFAULT_REALDEBRID_API_KEY=tu-realdebrid-api-key
 fly secrets set DEFAULT_ALLDEBRID_API_KEY=tu-alldebrid-api-key
 ```
 
-**NOTA**: La SECRET_KEY ya ha sido generada automáticamente. Puedes usar la que se muestra arriba o generar una nueva con:
+**NOTA**: La SECRET_KEY ya ha sido generada automáticamente y validada. Puedes usar la que se muestra arriba o generar una nueva con:
 
 ```bash
 # Generar nueva clave (opcional)
@@ -140,6 +148,27 @@ fly secrets set ADDON_PASSWORD=tu-password-seguro
 
 ## 🐛 Solución de Problemas
 
+### Error: "verifique que el nombre del elemento no sea una cadena"
+
+Este error ocurre cuando hay problemas de sintaxis TOML. Soluciones:
+
+1. **Validar configuración**:
+   ```bash
+   node scripts/validate-flyio-config.js
+   ```
+
+2. **Corregir comillas**: Asegúrate de usar comillas dobles para cadenas:
+   ```toml
+   cpu_kind = "shared"  # ✅ Correcto
+   cpu_kind = 'shared'  # ❌ Incorrecto
+   ```
+
+3. **Verificar valores booleanos**: No usar comillas para `true`/`false`:
+   ```toml
+   force_https = true   # ✅ Correcto
+   force_https = "true" # ❌ Incorrecto
+   ```
+
 ### Error de Puerto
 
 Asegúrate de que el puerto interno en `fly.toml` coincida con el puerto de tu aplicación:
@@ -165,6 +194,26 @@ Si la aplicación usa mucha memoria, aumenta en `fly.toml`:
 ```toml
 [[vm]]
   memory_mb = 1024  # Aumentar según necesites
+```
+
+### Error de Variables de Entorno
+
+Si faltan variables de entorno críticas:
+
+```bash
+# Ver variables actuales
+fly secrets list
+
+# Agregar variables faltantes
+fly secrets set VARIABLE_NAME=value
+```
+
+### Error de Región
+
+Si la región por defecto no está disponible:
+
+```toml
+primary_region = 'iad'  # Cambiar a: ord, fra, sin, etc.
 ```
 
 ## 📝 Notas Importantes

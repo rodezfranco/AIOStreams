@@ -23,6 +23,15 @@ fi
 
 echo "✅ Autenticación verificada"
 
+# Validar configuración
+echo "🧪 Validando configuración..."
+if ! node scripts/validate-flyio-config.js; then
+    echo "❌ La configuración tiene errores. Corrige los problemas antes de continuar."
+    exit 1
+fi
+
+echo "✅ Configuración validada"
+
 # Verificar si la app ya existe
 if fly apps list | grep -q "aiostreams"; then
     echo "📱 App 'aiostreams' ya existe"
