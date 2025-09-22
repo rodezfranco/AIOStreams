@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.0](https://github.com/rodezfranco/AIOStreams/compare/v2.15.0...v2.16.0) (2025-09-22)
+
+
+### Features
+
+* add automatic TOML syntax fixer and enhance validation checks ([1f3a9e9](https://github.com/rodezfranco/AIOStreams/commit/1f3a9e90874707c4296ac46a0d26563ad26dffd3))
+
 ## [2.15.0](https://github.com/rodezfranco/AIOStreams/compare/v2.14.0...v2.15.0) (2025-09-22)
 
 
