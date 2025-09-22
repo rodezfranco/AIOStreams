@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.0](https://github.com/rodezfranco/AIOStreams/compare/v2.12.7...v2.13.0) (2025-09-16)
+
+
+### Features
+
+* add Google Drive client ID and secret fields to .env.sample ([9f7464c](https://github.com/rodezfranco/AIOStreams/commit/9f7464c93aad85e8beb237c5045f5103cf20d185))
+
 ## [2.12.7](https://github.com/rodezfranco/AIOStreams/compare/v2.12.6...v2.12.7) (2025-09-16)
 
 
