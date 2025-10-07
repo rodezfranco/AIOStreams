@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.5](https://github.com/rodezfranco/AIOStreams/compare/v2.14.4...v2.14.5) (2025-10-07)
+
+
+### Bug Fixes
+
+* **ci:** usar token personal para la publicación en GHCR ([394ad96](https://github.com/rodezfranco/AIOStreams/commit/394ad962e478b6d929921bf06f6754ad63059c13))
+
 ## [2.14.4](https://github.com/rodezfranco/AIOStreams/compare/v2.14.3...v2.14.4) (2025-10-07)
 
 
